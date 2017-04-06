@@ -1,0 +1,86 @@
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-family: $mainFont
+	color: $fontColor
+	font-size: $fontSize
+	font-weight: $fontWeight
+	line-height: $lineHeight
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	position: relative
+	background-color: #fff
+	&.no-scroll
+		overflow: hidden
+	&.no-scroll-nav
+		overflow: hidden
+	&.no-scroll-popup
+		overflow: hidden
+
+main
+	flex-grow: 1
+	padding-top: 32px
+	padding-bottom: 50px
+
+h1, h2, h3, h4, h5
+	color: #019dc4
+	font-weight: 600
+	text-transform: uppercase
+
+h1, h2.like-h1
+	font-size: $h1Size
+	line-height: $h1LineH
+
+h2
+	font-size: $h2Size
+	line-height: $h2LineH
+
+h3
+	font-size: $h3Size
+	line-height: $h3LineH
+
+h4
+	font-size: $h4Size
+	line-height: $h4LineH
+
+h5
+	font-size: $h5Size
+	line-height: $h5LineH
+
+strong
+	font-weight: 700
+
+button
+	border: 0
+	padding: 0
+	outline: 0
+	cursor: pointer
+
+a, .smth-more
+	display: inline-block
+	color: $linkColor
+	text-decoration: underline
+	transition: .1s
+	cursor: pointer
+	&:hover
+		text-decoration: none
+	&:active
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+input
+	&[type="text"]
+		box-sizing: border-box
+		background-color: #fff
+		border: 0
+		outline: 0
+		width: 100%
+		height: 37px
+		font-family: $mainFont
+		color: #222
+		font-size: 14px
+		font-weight: 400
+		padding: 0 6px

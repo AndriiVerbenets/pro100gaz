@@ -1,0 +1,31 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "description": "default packages",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "html"
+  ],
+  "author": "Andrew",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.11.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "~3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-html-import": "0.0.2",
+    "gulp-sass": "~3.0.0",
+    "gulp-sass-glob": "~1.0.8",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgo": "~1.0.3",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
