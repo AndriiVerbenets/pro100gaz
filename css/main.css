@@ -609,6 +609,51 @@ a:focus,
 
 /*Buttons END*/
 
+.map-wrapper {
+  position: relative;
+}
+
+.map {
+  height: 410px;
+}
+
+.places-list {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 77;
+  width: 100%;
+  max-width: 360px;
+}
+
+.places-list__item {
+  background-color: #fff;
+  padding: 15px 10px 13px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
+
+.places-list__item.selected {
+  border-color: #f14848;
+}
+
+.places-list__item.selected .places-list__title {
+  color: #f14848;
+}
+
+.places-list__title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.places-list__info {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 .page-header {
   background-color: #1f1f1f;
   position: fixed;
@@ -776,6 +821,14 @@ a:focus,
   .text-section__img {
     display: none;
   }
+
+  .map {
+    height: 544px;
+  }
+
+  .places-list {
+    max-width: 260px;
+  }
 }
 
 @media all and (max-width: 760px) {
@@ -860,6 +913,19 @@ a:focus,
   .text-section__text p {
     display: none;
     margin-bottom: 18px;
+  }
+
+  .map {
+    height: 250px;
+  }
+
+  .places-list {
+    position: static;
+    max-width: none;
+  }
+
+  .places-list__item {
+    background-color: #f0f0eb;
   }
 
   .page-header .grid-width {
