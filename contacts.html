@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Контакты | pro100gaz</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!-- Header -->
+<header class="page-header">
+<div class="grid-width">
+
+	<div class="main-nav-toggler">
+		<img src="img/svg/icon-menu.svg" alt="">
+	</div>
+
+	<div class="logo">
+		<a href="/">
+			<img class="js-retina" src="img/img-logo.png" width="173" height="46" alt="">
+		</a>
+	</div>
+
+	<nav class="main-nav" id="main-nav">
+		<div class="main-nav-toggler">
+			<img src="img/svg/icon-close-menu.svg" alt="">
+		</div>
+
+		<ul class="main-nav-list">
+			<li class="main-nav-list__item">
+				<a href="/">Главная</a>
+			</li>
+			<li class="main-nav-list__item">
+				<a href="about.html">Наше сто</a>
+			</li>
+			<li class="main-nav-list__item">
+				<a href="contacts.html">Контакты</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+</header>
+<!-- Content -->
+<main class="contacts-page">
+
+	<section class="contacts">
+		<div class="grid-width">
+			<h3 class="contacts__title">Контакты</h3>
+
+			<div class="map-wrapper" id="map-wrapper">
+				<ul class="places-list" id="places">
+					<li class="places-list__item" data-coords="50.42105, 30.6155" data-zoom="13" data-aos="fade-up">
+						<h6 class="places-list__title">
+							СТО-Дарница:
+						</h6>
+
+						<div class="places-list__info">
+							<p>г.Киев, ул. Тепловозная 18Д</p>
+							<p>(068) 518-43-03, (066) 601-43-69, (093) 296-98-96</p>
+							<p>Алексей</p>
+						</div>
+					</li>
+
+					<li class="places-list__item" data-coords="50.50752, 30.63622" data-zoom="13" data-aos="fade-up" data-aos-delay="200">
+						<h6 class="places-list__title">
+							СТО-Троещина:
+						</h6>
+
+						<div class="places-list__info">
+							<p>г. Киев, ул. Пуховская 2</p>
+							<p>(093) 490-59-59, (095) 490-59-59, (097) 490-59-59</p>
+							<p>Андрей</p>
+						</div>
+					</li>
+
+					<li class="places-list__item" data-coords="50.41739, 30.6184" data-zoom="13" data-aos="fade-up" data-aos-delay="300">
+						<h6 class="places-list__title">
+							Прием новой почты:
+						</h6>
+
+						<div class="places-list__info">
+							<p>г. Киев, склад №125</p>
+							<p>(067) 605-16-66</p>
+							<p>получатель: Лопата Василий Григорьевич</p>
+						</div>
+					</li>
+				</ul>
+
+				<div class="map" id="map"></div>
+			</div>
+
+		</div>
+	</section>
+</main>
+<!-- Footer -->
+<footer class="page-footer">
+	<div class="grid-width">
+		<div class="copyright">LVS-AUTO © 2017</div>
+	</div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Small Scripts -->
+<script src="js/smallScripts.js"></script>
+<!-- Animation on scroll -->
+<script src="js/aos.js"></script>
+<script>
+	AOS.init({
+		easing: 'ease',
+		duration: 1000
+	});
+</script>
+<!-- map -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=ru"></script>
+<script src="js/googleMap.js"></script>
+
+
+</body>
+</html>

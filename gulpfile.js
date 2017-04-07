@@ -20,14 +20,14 @@ gulp.task('csso', function () {
 
 // SVG Optimizer
 gulp.task('svgmin', function () {
-	return gulp.src('img/svg/in-sprite/*.svg')
+	return gulp.src('img/svg/*.svg')
 		.pipe(svgmin())
-		.pipe(gulp.dest('img/svg/in-sprite'));
+		.pipe(gulp.dest('img/svg/'));
 });
 
 // SVG Sprites
 gulp.task('svgstore', function () {
-	return gulp.src('img/svg/in-sprite/*.svg')
+	return gulp.src('img/svg/*.svg')
 		.pipe(svgmin())
 		.pipe(svgstore({ inlineSvg: false }))
 		.pipe(gulp.dest('img/svg'));
@@ -51,14 +51,14 @@ gulp.task('gcmq', function () {
 gulp.task('server', function () {
 	connect.server({
 		root: './',
-		port: '7070',
+		port: '8080',
 		livereload: true
 	});
 });
 
 // sass
 gulp.task('sass', function () {
-	return gulp.src('sass/_main.sass')
+	return gulp.src('sass/main.sass')
 		.pipe(sassGlob())
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(autoprefixer())
@@ -69,7 +69,7 @@ gulp.task('sass', function () {
 // Watcher
 gulp.task('watch', function () {
 	gulp.watch('sass/**/*.sass', ['sass']);
-	//gulp.watch('css/main.css', ['gcmq']);
+	gulp.watch('css/main.css', ['gcmq']);
 	gulp.watch('html/**/*.html', ['import']);
 });
 

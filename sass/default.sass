@@ -1,5 +1,5 @@
+/* Default */
 body
-	max-width: 1920px
 	min-width: 320px
 	margin: 0 auto
 	font-family: $mainFont
@@ -12,22 +12,20 @@ body
 	min-height: 100vh
 	position: relative
 	background-color: #fff
-	&.no-scroll
-		overflow: hidden
-	&.no-scroll-nav
-		overflow: hidden
-	&.no-scroll-popup
+
+	&.scroll-disabled
 		overflow: hidden
 
 main
 	flex-grow: 1
-	padding-top: 32px
-	padding-bottom: 50px
+	padding: 36px 0
 
-h1, h2, h3, h4, h5
-	color: #019dc4
-	font-weight: 600
-	text-transform: uppercase
+	@media all and (max-width: 760px)
+		padding: 20px 0
+
+h1, h2, h3, h4, h5, h6
+	color: #000
+	font-weight: 700
 
 h1, h2.like-h1
 	font-size: $h1Size
@@ -40,6 +38,7 @@ h2
 h3
 	font-size: $h3Size
 	line-height: $h3LineH
+	margin-bottom: 18px
 
 h4
 	font-size: $h4Size
@@ -48,6 +47,10 @@ h4
 h5
 	font-size: $h5Size
 	line-height: $h5LineH
+
+h6
+	font-size: $h6Size
+	line-height: $h6LineH
 
 strong
 	font-weight: 700
@@ -71,16 +74,4 @@ a, .smth-more
 	&:focus
 		text-decoration: none
 
-input
-	&[type="text"]
-		box-sizing: border-box
-		background-color: #fff
-		border: 0
-		outline: 0
-		width: 100%
-		height: 37px
-		font-family: $mainFont
-		color: #222
-		font-size: 14px
-		font-weight: 400
-		padding: 0 6px
+/* Default END */

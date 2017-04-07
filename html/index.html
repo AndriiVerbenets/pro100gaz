@@ -2,47 +2,12 @@
 <html lang="en">
 <head>
 	<title>Главная | pro100gaz</title>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- main CSS -->
-	<link rel="stylesheet" href="css/main.css">
-
+@import "head.html"
 </head>
 <body>
 <!-- Header -->
 <header class="page-header">
-<div class="grid-width">
-
-	<div class="main-nav-toggler">
-		<img src="img/svg/icon-menu.svg" alt="">
-	</div>
-
-	<div class="logo">
-		<a href="/">
-			<img class="js-retina" src="img/img-logo.png" width="173" height="46" alt="">
-		</a>
-	</div>
-
-	<nav class="main-nav" id="main-nav">
-		<div class="main-nav-toggler">
-			<img src="img/svg/icon-close-menu.svg" alt="">
-		</div>
-
-		<ul class="main-nav-list">
-			<li class="main-nav-list__item">
-				<a href="/">Главная</a>
-			</li>
-			<li class="main-nav-list__item">
-				<a href="about.html">Наше сто</a>
-			</li>
-			<li class="main-nav-list__item">
-				<a href="contacts.html">Контакты</a>
-			</li>
-		</ul>
-	</nav>
-</div>
-
+@import "header.html"
 </header>
 <!-- Content -->
 <main class="home-page">
@@ -152,27 +117,7 @@
 </main>
 <!-- Footer -->
 <footer class="page-footer">
-	<div class="grid-width">
-		<div class="copyright">LVS-AUTO © 2017</div>
-	</div>
-</footer>
-
-<!-- jQuery -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<!-- Small Scripts -->
-<script src="js/smallScripts.js"></script>
-<!-- Animation on scroll -->
-<script src="js/aos.js"></script>
-<script>
-	AOS.init({
-		easing: 'ease',
-		duration: 1000
-	});
-</script>
-<!-- map -->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=ru"></script>
-<script src="js/googleMap.js"></script>
-
+@import "footer.html"
 
 </body>
 </html>

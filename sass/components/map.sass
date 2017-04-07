@@ -1,0 +1,52 @@
+.map-wrapper
+	position: relative
+
+.map
+	height: 410px
+
+	@media all and (max-width: 1024px)
+		height: 544px
+
+	@media all and (max-width: 760px)
+		height: 250px
+
+.places-list
+	position: absolute
+	top: 20px
+	left: 20px
+	z-index: 77
+	width: 100%
+	max-width: 360px
+
+	@media all and (max-width: 1024px)
+		max-width: 260px
+
+	@media all and (max-width: 760px)
+		position: static
+		max-width: none
+
+	&__item
+		background-color: #fff
+		padding: 15px 10px 13px
+		border-radius: 4px
+		margin-bottom: 10px
+		cursor: pointer
+		border-bottom: 2px solid #fff
+
+		@media all and (max-width: 760px)
+			background-color: $grey
+
+		&.selected
+			border-color: $mainColor
+
+			.places-list__title
+				color: $mainColor
+
+	&__title
+		text-transform: uppercase
+		margin-bottom: 5px
+
+	&__info
+		font-size: 12px
+		font-weight: 400
+		line-height: 20px

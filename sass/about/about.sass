@@ -1,0 +1,109 @@
+.about
+	margin-bottom: 28px
+
+	@media all and (max-width: 1024px)
+		margin-bottom: 16px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	&__text
+		width: 66%
+		max-width: 782px
+
+		@media all and (max-width: 1024px)
+			width: 100%
+			max-width: none
+
+	&__list
+		width: 34%
+		max-width: 380px
+		min-width: 380px
+		padding: 25px 20px
+		background-color: $grey
+		border-radius: 4px
+		font-size: $h6Size
+		line-height: $h6LineH
+		text-transform: uppercase
+		font-weight: 700
+		margin-top: 44px
+		margin-left: 15px
+
+		@media all and (max-width: 1024px)
+			display: none
+
+		li
+			& + li
+				margin-top: 16px
+
+.text-section
+	padding: 20px 0
+
+	@media all and (max-width: 1024px)
+		padding: 16px 0
+
+	@media all and (max-width: 760px)
+		padding: 0
+
+	.grid-width
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+	&__text
+		width: 66%
+
+		@media all and (max-width: 1024px)
+			width: 100%
+
+		h3
+
+			@media all and (max-width: 760px)
+				font-size: $h6Size
+				line-height: $h6LineH
+				text-transform: uppercase
+				background-color: $grey
+				border-radius: 4px
+				padding: 10px 26px 10px 10px
+
+			&.js-accord-title
+				position: relative
+
+				&:after
+					content: ""
+					width: 8px
+					height: 6px
+					position: absolute
+					top: 15px
+					right: 10px
+					transition: transform .3s
+					background:
+						image: url("../img/svg/icon-arrow.svg")
+						repeat: no-repeat
+						position: center center
+
+		p
+			@media all and (max-width: 760px)
+				display: none
+				margin-bottom: 18px
+
+		&.js-accord-item--active
+
+			.js-accord-title
+				color: $mainColor
+
+				&:after
+					transform: rotate(180deg)
+
+	&__img
+		width: 34%
+		padding: 0 10px
+
+		@media all and (max-width: 1024px)
+			display: none
+
+		img
+			display: block
+			margin: auto

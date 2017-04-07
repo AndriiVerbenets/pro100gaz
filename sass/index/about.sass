@@ -1,0 +1,99 @@
+.home-about
+	padding: 36px 0 30px
+
+	@media all and (max-width: 760px)
+		padding: 26px 0
+
+	.grid-width
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+		@media all and (max-width: 1024px)
+			display: block
+
+	&__text
+		width: 66%
+		padding-right: 10px
+
+		p
+			@media all and (max-width: 760px)
+				margin-bottom: 10px
+				overflow: hidden
+				height: 216px
+				position: relative
+
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					right: 0
+					bottom: 0
+					box-shadow: 0 0 20px 15px #fff
+
+		&--show
+			p
+				height: auto !important
+
+				&:before
+					display: none
+
+		&-more
+			color: $linkColor
+			text-decoration: underline
+			cursor: pointer
+			display: none
+
+			&:active
+				text-decoration: none
+
+			@media all and (max-width: 760px)
+				display: block
+
+		@media all and (max-width: 1024px)
+			width: 100%
+
+	&__img
+		padding-top: 16px
+		width: 34%
+		max-width: 420px
+		min-width: 402px
+		position: relative
+
+		@media all and (max-width: 1024px)
+			width: 100%
+			max-width: none
+			min-width: auto
+			padding-top: 40px
+
+		@media all and (max-width: 760px)
+			display: none
+
+		&-inner
+			padding-top: 74%
+
+			@media all and (max-width: 1024px)
+				padding-top: 0
+				display: flex
+				justify-content: space-around
+				align-items: center
+
+		&-1
+			top: 18px
+			left: 62px
+
+		&-2
+			right: 2px
+			bottom: 2px
+
+		&-3
+			left: 29px
+			bottom: -24px
+
+		img
+			display: block
+			position: absolute
+
+			@media all and (max-width: 1024px)
+				position: static
+			//@media all and (max-width: 760px)

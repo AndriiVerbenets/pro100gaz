@@ -6,17 +6,32 @@
 	background-image: none
 	text-decoration: none
 	display: inline-block
-	padding: 8px 25px
+	padding: 16px 25px
 	margin-bottom: 0
 	vertical-align: middle
-	line-height: 1.5
+	line-height: 1.4
 	cursor: pointer
 	text-align: center
 	background-color: #ccc
 	white-space: nowrap
 	color: #fff
-	// for this site
+	font-family: $mainFont
 	text-transform: uppercase
+	font-size: 14px
+	font-weight: 700
 
+	&--red
+		min-width: 220px
+		box-shadow: 0 1px 0 #a51313, inset 0 1px 0 rgba(255, 255, 255, 0.5)
+		border-radius: 5px
+		background-color: #000
+		background-image: linear-gradient(to top, #dc3131 0%, #f14848 100%)
+		transition: top .2s
 
+		&:hover
+			background-image: linear-gradient(to top, #f14848 0%, #dc3131 100%)
+
+		&:active
+			position: relative
+			top: 2px
 /*Buttons END*/
